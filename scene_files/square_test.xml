@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<scene>
+	<camera>
+		<target>0 0 0</target>
+		<eye>0 0 10</eye>
+		<worldUp>0 1 0</worldUp>
+		<fov>45</fov>
+		<width>100</width>
+		<height>100</height>
+	</camera>
+
+	<geometry type="square" name="Object">
+		<transform>
+			<translate>0 0 -50</translate>
+		</transform>
+		<material>lambert1</material>
+	</geometry>
+
+	<geometry type="sphere" name="Point Light">
+		<transform>
+			<translate>5 5 3</translate>
+		</transform>
+		<material>emissive_material</material>
+	</geometry>
+
+	<material type="diffuse" name="lambert1">
+		<baseColor>0 1 0</baseColor>
+	</material>
+
+	<material type="emissive" name="emissive_material">
+		<baseColor>1 1 1</baseColor>
+	</material>
+
+	<integrator type="raytrace">
+		<maxDepth>5</maxDepth>
+	</integrator>
+</scene>

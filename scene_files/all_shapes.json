@@ -1,0 +1,89 @@
+{
+  "scene": {
+    "camera": {
+      "target": [0, 0, 0],
+      "eye": [0, 0.5, 5],
+      "worldUp": [0, 1, 0],
+      "fov": 50,
+      "width": 400,
+      "height": 400
+    },
+    "geometry": [
+      {
+        "type": "sphere",
+        "name": "Sphere",
+        "transform": {
+          "translate": [-1.5, 0, 0],
+          "scale": [1, 1, 1]
+        },
+        "material": "textured_diffuse"
+      },
+      {
+        "type": "square",
+        "name": "Square",
+        "transform": {
+          "translate": [-0.5, 0, 0],
+          "scale": [1, 1, 1]
+        },
+        "material": "textured_diffuse"
+      },
+      {
+        "type": "cube",
+        "name": "Cube",
+        "transform": {
+          "translate": [0.5, 0, 0],
+          "scale": [1, 1, 1]
+        },
+        "material": "textured_diffuse"
+      },
+      {
+        "type": "cube",
+        "name": "Cube2",
+        "transform": {
+          "translate": [0.5, -1, 0],
+          "rotate": [0, 45, 0],
+          "scale": [1, 1, 1]
+        },
+        "material": "textured_diffuse"
+      },
+      {
+        "type": "obj",
+        "name": "OBJ",
+        "filename": "triangle.obj",
+        "transform": {
+          "translate": [1.5, 0, 0],
+          "scale": [1, 1, 1]
+        },
+        "material": "textured_diffuse"
+      },
+      {
+        "type": "sphere",
+        "name": "Light Source",
+        "transform": {
+          "translate": [0, 4, 5],
+          "scale": [0.5, 0.5, 0.5]
+        },
+        "material": "emissive_material"
+      }
+    ],
+    "material": [
+      {
+        "type": "lambert",
+        "name": "textured_diffuse",
+        "baseColor": [1, 1, 1],
+        "texture": "tex_nor_maps/154.jpg",
+        "normalMap": "tex_nor_maps/154_norm.jpg"
+      },
+      {
+        "type": "lambert",
+        "name": "emissive_material",
+        "baseColor": [1, 1, 1],
+        "emissive": "true"
+      }
+    ],
+    "integrator": {
+      "type": "raytrace",
+      "maxDepth": 5
+    }
+  }
+}
