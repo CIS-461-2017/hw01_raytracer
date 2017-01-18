@@ -1,0 +1,45 @@
+{
+  "scene": {
+    "camera": {
+      "target": [0, 0, 0],
+      "eye": [0, 0.5, 5],
+      "worldUp": [0, 1, 0],
+      "fov": 50,
+      "width": 400,
+      "height": 400
+    },
+    "geometry": [
+      {
+        "type": "square",
+        "name": "Square",
+        "material": "white_diffuse"
+      },
+      {
+        "type": "sphere",
+        "name": "Light",
+        "transform": {
+          "translate": [0, 5, 30],
+          "scale": [1, 1, 1]
+        },
+        "material": "emissive_material"
+      }
+    ],
+    "material": [
+      {
+        "type": "lambert",
+        "name": "white_diffuse",
+        "baseColor": [1, 1, 1]
+      },
+      {
+        "type": "lambert",
+        "name": "emissive_material",
+        "baseColor": [1, 1, 1],
+        "emissive": "true"
+      }
+    ],
+    "integrator": {
+      "type": "raytrace",
+      "maxDepth": 5
+    }
+  }
+}
