@@ -19,8 +19,8 @@ is not the same as the one that will be used to ray trace your scene. Use the
 
 Ray Class (5 points)
 --------
-We have provided you with a mostly-complete `Ray` class in `ray.h`. It declares
-but does not define the function `GetTransformedCopy`. Implement this function
+We have provided you with a mostly-complete `Ray` class in `ray.h`. It declares,
+but does not define, the function `GetTransformedCopy`. Implement this function
 so that it takes in a transformation matrix and returns a
 __copy__ of the Ray that has been transformed by said matrix. When a ray is
 transformed by a matrix, both its origin and direction are changed.
