@@ -17,7 +17,7 @@ scene, such as object positions and colors. Note that the controllable camera
 is not the same as the one that will be used to ray trace your scene. Use the
 `Help` drop down menu to view controls for the camera.
 
-Ray Class (10 points)
+Ray Class (5 points)
 --------
 We have provided you with a mostly-complete `Ray` class in `ray.h`. It declares
 but does not define the function `GetTransformedCopy`. Implement this function
@@ -40,7 +40,7 @@ preview camera around in the GL scene.
 
 ![](./camera_wireframe.png)
 
-Geometry Intersection Functions (40 points)
+Geometry Intersection Functions (45 points)
 -------------
 The following classes inherit from the `Geometry` abstract class:
 * `SquarePlane`
