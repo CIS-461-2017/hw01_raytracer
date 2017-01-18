@@ -19,14 +19,9 @@ is not the same as the one that will be used to ray trace your scene. Use the
 
 Ray Class (10 points)
 --------
-Fill out the empty Ray class provided in `ray.h`. It must have at least the
-following member variables:
-* An origin point
-* A direction
-
-Your Ray class should also implement the following functions:
-* At least one constructor that takes in an origin and a direction
-* `GetTransformedCopy`, which will take in a transformation matrix and return a
+We have provided you with a mostly-complete `Ray` class in `ray.h`. It declares
+but does not define the function `GetTransformedCopy`. Implement this function
+so that it takes in a transformation matrix and returns a
 __copy__ of the Ray that has been transformed by said matrix. When a ray is
 transformed by a matrix, both its origin and direction are changed.
 
