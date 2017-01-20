@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+!scene_files/*.obj
 
 # Precompiled Headers
 *.gch
